@@ -1,0 +1,27 @@
+#(PrivateAccess)
+
+# > Gmail
+DOMAIN, pop.gmail.com, PrivateAccess
+DOMAIN, imap.gmail.com, PrivateAccess
+DOMAIN, smtp.gmail.com, PrivateAccess
+
+# > Outlook
+DOMAIN, outlook.office365.com, PrivateAccess
+DOMAIN, smtp.office365.com, PrivateAccess
+DOMAIN, imap-mail.outlook.com, PrivateAccess
+DOMAIN, smtp-mail.outlook.com, PrivateAccess
+
+# > Banking
+DOMAIN-SUFFIX, rbc.com, PrivateAccess
+DOMAIN-SUFFIX, rbc.ca, PrivateAccess
+DOMAIN-SUFFIX, rbcroyalbank.com, PrivateAccess
+DOMAIN-SUFFIX, rbcroyalbank.ca, PrivateAccess
+DOMAIN-SUFFIX, asb.co.nz, PrivateAccess
+DOMAIN-SUFFIX, anz.co.nz, PrivateAccess
+DOMAIN-SUFFIX, xero.com, PrivateAccess
+
+# > PayPal
+USER-AGENT, PayPal*,PayPal
+DOMAIN-KEYWORD, paypal,PayPal
+DOMAIN-SUFFIX, paypal.com,PayPal
+DOMAIN-SUFFIX, paypalobjects.com,PayPal
