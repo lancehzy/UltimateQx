@@ -23,7 +23,7 @@ DOMAIN-SUFFIX, anznewzealand.sc.omtrdc.net, PrivateAccess
 DOMAIN-SUFFIX, xero.com, PrivateAccess
 
 # > PayPal
-USER-AGENT, PayPal*,PayPal
-DOMAIN-KEYWORD, paypal,PayPal
-DOMAIN-SUFFIX, paypal.com,PayPal
-DOMAIN-SUFFIX, paypalobjects.com,PayPal
+USER-AGENT, PayPal*,PrivateAccess
+DOMAIN-KEYWORD, paypal,PrivateAccess
+DOMAIN-SUFFIX, paypal.com,PrivateAccess
+DOMAIN-SUFFIX, paypalobjects.com,PrivateAccess
