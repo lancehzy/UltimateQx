@@ -6,10 +6,10 @@ DOMAIN, imap.gmail.com, PrivateAccess
 DOMAIN, smtp.gmail.com, PrivateAccess
 
 # > Outlook
-DOMAIN, outlook.office365.com, PrivateAccess
-DOMAIN, smtp.office365.com, PrivateAccess
-DOMAIN, imap-mail.outlook.com, PrivateAccess
-DOMAIN, smtp-mail.outlook.com, PrivateAccess
+#DOMAIN, outlook.office365.com, PrivateAccess
+#DOMAIN, smtp.office365.com, PrivateAccess
+#DOMAIN, imap-mail.outlook.com, PrivateAccess
+#DOMAIN, smtp-mail.outlook.com, PrivateAccess
 
 # > Banking
 DOMAIN-SUFFIX, rbc.com, PrivateAccess
@@ -17,7 +17,9 @@ DOMAIN-SUFFIX, rbc.ca, PrivateAccess
 DOMAIN-SUFFIX, rbcroyalbank.com, PrivateAccess
 DOMAIN-SUFFIX, rbcroyalbank.ca, PrivateAccess
 DOMAIN-SUFFIX, asb.co.nz, PrivateAccess
+DOMAIN-SUFFIX, asb.sc.omtrdc.net, PrivateAccess
 DOMAIN-SUFFIX, anz.co.nz, PrivateAccess
+DOMAIN-SUFFIX, anznewzealand.sc.omtrdc.net, PrivateAccess
 DOMAIN-SUFFIX, xero.com, PrivateAccess
 
 # > PayPal
