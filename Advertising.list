@@ -2,6 +2,7 @@
 
 # > Tracking
 DOMAIN-SUFFIX,umeng.com,REJECT
+DOMAIN-SUFFIX,activation.crossutility.com,REJECT
 
 # > General
 DOMAIN-KEYWORD,adservice,REJECT
