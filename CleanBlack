@@ -6,26 +6,59 @@ dns-server = https://doh.pub/dns-query, https://dns.alidns.com/dns-query
 ipv6 = false
 
 [Rule]
+
+
+#手动定义的 Proxy 列表
+
+#ZEE Rule
+DOMAIN-KEYWORD,91porn,Proxy
+DOMAIN-KEYWORD,91porny,Proxy
+DOMAIN-KEYWORD,hsex,Proxy
+DOMAIN-KEYWORD,51cg,Proxy
+DOMAIN-KEYWORD,library,Proxy
+
+
 # =================================================
 # 🤖 AI SERVICES (ChatGPT, Gemini, Claude, Copilot)
 # =================================================
 
-# --- OpenAI (ChatGPT) ---
+# --- OpenAI / ChatGPT Main Domains ---
 DOMAIN-SUFFIX,chatgpt.com,PROXY
 DOMAIN-SUFFIX,openai.com,PROXY
 DOMAIN-SUFFIX,ai.com,PROXY
+DOMAIN-SUFFIX,chat.com,PROXY
 DOMAIN-SUFFIX,oaistatic.com,PROXY
 DOMAIN-SUFFIX,oaiusercontent.com,PROXY
+
+# --- Authentication, CDNs & Security (Crucial for login) ---
 DOMAIN-SUFFIX,auth0.com,PROXY
 DOMAIN-SUFFIX,identrust.com,PROXY
 DOMAIN-SUFFIX,challenges.cloudflare.com,PROXY
 DOMAIN-SUFFIX,client-api.arkoselabs.com,PROXY
-# Voice Mode / Realtime
-DOMAIN-SUFFIX,livekit.cloud,PROXY
-DOMAIN-SUFFIX,chatgpt.livekit.cloud,PROXY
-DOMAIN-SUFFIX,turn.livekit.cloud,PROXY
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net,PROXY
 DOMAIN-SUFFIX,openaicom.imgix.net,PROXY
+DOMAIN-SUFFIX,auth.openai.com,PROXY
+
+
+# --- Advanced Voice Mode & Real-time Features ---
+DOMAIN-SUFFIX,livekit.cloud,PROXY
+DOMAIN-SUFFIX,chatgpt.livekit.cloud,PROXY
+DOMAIN-SUFFIX,host.livekit.cloud,PROXY
+DOMAIN-SUFFIX,turn.livekit.cloud,PROXY
+
+# --- Analytics & Feature Flags (Prevents loading errors) ---
+DOMAIN-SUFFIX,statsig.com,PROXY
+DOMAIN-SUFFIX,statsigapi.net,PROXY
+DOMAIN-SUFFIX,featuregates.org,PROXY
+DOMAIN-SUFFIX,intercom.io,PROXY
+DOMAIN-SUFFIX,intercomcdn.com,PROXY
+DOMAIN-SUFFIX,sentry.io,PROXY
+DOMAIN-SUFFIX,algolia.net,PROXY
+
+# --- Payments (Optional: Only needed if subscribing to Plus) ---
+DOMAIN-SUFFIX,stripe.com,PROXY
+DOMAIN-SUFFIX,invoice.stripe.com,PROXY
+
 
 # --- Google (Gemini & DeepMind) ---
 DOMAIN-SUFFIX,gemini.google.com,PROXY
